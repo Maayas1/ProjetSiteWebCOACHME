@@ -1,0 +1,334 @@
+/* header */
+h2,
+h3{
+    
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: rgb(10, 10, 10);
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #141f8f;
+    width: 30%;
+    margin : 0 auto;
+    margin-top: 30px;
+    content: " ";
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+ body{
+    font-size: 20px;
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato','arial',sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.acceuil{
+    position: absolute;
+    width:80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #141f8f;
+    border-bottom: 1px solid #141f8f;
+    padding: 1px;
+    transition: border-bottom 0.2s, color 0.2s ;
+}
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+  
+    
+}
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding : 10px 30px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    font-weight: 400;
+    
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color : #141f8f;
+    border : 2px solid #141f8f;
+    color: white;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+    
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color : #141f8f;
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border : 2px solid #fff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+     border : 2px solid #fff;
+     color: #fff;
+     background-color: #cacbc2;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+.menu{
+    position: absolute;
+
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.075)),url(img/contact.png);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}   
+.row{
+    flex-direction: row;
+    position: fixed;
+    z-index: 4000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffffd7;
+    width:100%;
+    overflow-x: hidden;
+}
+.logo{
+    width: auto;
+    height: 100px;
+    float: left;
+    margin-top: -10px;
+}
+ 
+
+
+nav{
+    background-color:#8f8ca179;
+    
+ 
+}
+.main-nav{
+    float: left;
+    list-style:none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.connexion li{
+    float : right;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: -20px;
+    text-decoration: none;
+    font-size: 120%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #141f8f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    font-weight: 900;
+    padding : 8px 0px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #141f8f;
+}
+.acceuil{ 
+    height:100 px;  
+    left: 50%;
+    text-align: center;
+}
+.formulaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/zenda.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(img/zenda.jpg);
+  background-size: cover;   
+}
+  form{
+      margin-top: 20px;
+      background-color:  rgb(190, 190, 190);
+    padding: 40px 60px;
+    border-radius: 30px;
+    min-width: 300px;
+
+}
+form h2{
+    color: black;
+    text-align: center;
+}
+form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+form .inputs input[type="Nom"], input[type="Prenom"], input[type="Sujet"] , input[type="email"] {
+    border-radius: 10px;
+    border:none;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+     
+}
+form .inputs  input[type="Message"]{
+    padding: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    margin-bottom: 15px;
+    
+}
+form button{
+    padding: 15px 25px;
+    border: none;
+    background-color: rgb(78, 78, 78);
+    border-radius: 10px;
+    font-size: 15px;
+    color: white
+    
+
+}
+/* footer */
+footer{
+    margin: 120px;
+    background-color: #333;
+    padding : 40px;
+    font-size: 80%;
+}
+.footer-nav{
+    list-style: none;
+    float: left; 
+}
+
+.social-links{
+    list-style:none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:active,
+.footer-nav li a:hover{
+    color: #ddd;
+    
+}
+
+.social-links li a:visited,
+.social-links li a:link{
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram,
+.ion-social-googleplus{
+    transition: color 0.2s;
+}
+
+
+.ion-social-facebook:hover{
+    color: #3b5998
+}
+.ion-social-twitter:hover{
+    color: #55acee
+}
+.ion-social-googleplus:hover{
+    color: #dd4b39
+}
+.ion-social-instagram:hover{
+    color: #517fa4
+}
+
+
+footer p{
+    color: #888;
+    text-align:center;
+    margin-top: 20px;
+}
